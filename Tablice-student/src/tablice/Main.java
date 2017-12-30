@@ -54,11 +54,11 @@ public class Main {
 		return s/resultArray.length;
 	}
 	static void averageName(Student studentArray[], Result resultArray[]){
-
+		Double aver = averageResult(resultArray);
 		String a = "";
 		String b = "";
 		for (int i = 0; i<resultArray.length; i++) {
-			if (resultArray[i].score > averageResult(resultArray)) {
+			if (resultArray[i].score > aver) {
 				 a = a + getNameForId(studentArray, resultArray[i].studentId) + " ";
 			}
 			else {
